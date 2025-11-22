@@ -1,0 +1,129 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #62d0f5, #a4e4c2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  
+  .todo-app {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .input-container {
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  #todo-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+   
+  }
+  
+  #add-btn {
+    background: #7d4aff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  #add-btn:hover {
+    background: #6937cc;
+  }
+  
+  #todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    height: 300px ;
+    overflow: auto;
+  
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+   
+  }
+  
+  .todo-item .delete-btn {
+    background: #ff5252;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px;
+    display: none; /* Initially hidden */
+    position: absolute;
+    right: 10px;
+  }
+  
+  .todo-item:hover .delete-btn {
+    display: block; /* Visible when hovered */
+  }
+  
+  .todo-item button:hover {
+    background: #e63939;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #clear-all {
+    background: #7d4aff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #clear-all:hover {
+    background: #6937cc;
+  }
+  
+  #pending-tasks {
+    font-size: 0.9rem;
+  }
+  
